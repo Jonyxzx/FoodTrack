@@ -1,14 +1,7 @@
-CREATE TABLE IF NOT EXISTS employees (
-    id integer,
-    first_name varchar(250),
-    last_name varchar(250),
-    age integer,
-    designation varchar(250),
-    phone_number varchar(250),
-    joined_on date,
-    address varchar(250),
-    date_of_birth date,
-    created_at timestamp,
-    updated_at timestamp,
+CREATE TABLE IF NOT EXISTS locations (
+    id INTEGER,
+    location_name VARCHAR(250) NOT NULL,
+    longitude NUMERIC(10, 6) NOT NULL,
+    latitude NUMERIC(10, 6) NOT NULL,
     PRIMARY KEY (id)
 );
